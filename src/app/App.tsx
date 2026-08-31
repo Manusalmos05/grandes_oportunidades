@@ -9,6 +9,7 @@ import { SectionTitle } from "../sections/title.tsx";
 import { BenefitCard } from "../sections/benefist.tsx";
 import { StepItem } from "../sections/steps.tsx";
 import { PrizeCard, prizes } from "../sections/prize.tsx";
+import { Header } from "../sections/header.tsx";
 
 
 
@@ -17,7 +18,7 @@ import { PrizeCard, prizes } from "../sections/prize.tsx";
 
 // ─── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
-  const { dark, toggle } = TemaUsuario();
+  const { dark } = TemaUsuario();
   const [submitted, setSubmitted]   = useState(false);
   const [carouselIdx, setCarouselIdx] = useState(0);
   const formRef = useRef<HTMLDivElement>(null);
@@ -29,6 +30,9 @@ export default function App() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg-page)", fontFamily: "Outfit, sans-serif", color: "var(--text-primary)" }}>
+
+
+      <Header/>
 
  
 
