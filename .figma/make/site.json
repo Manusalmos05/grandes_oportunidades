@@ -1,0 +1,10 @@
+{
+  "description": "Promote and manage a special anniversary raffle for a local fashion store, allowing users to easily participate via a QR code and win exclusive prizes.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

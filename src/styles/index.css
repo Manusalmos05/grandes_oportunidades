@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import 'tailwindcss';
+
+/* ── Brand tokens (invariant) ── */
+@theme {
+  --color-brand-red:        #D90416;
+  --color-brand-red-dark:   #8F0010;
+  --color-brand-gold:       #D4A72C;
+  --color-brand-gold-light: #F2C65C;
+
+  --font-display: 'Montserrat', sans-serif;
+  --font-body:    'Outfit', sans-serif;
+  --font-script:  'Dancing Script', cursive;
+}
+
+/* ── Semantic surface tokens — DARK (default) ── */
+:root {
+  --bg-page:        #050505;
+  --bg-page-alt:    #0A0A0A;
+  --bg-card:        #0D0D0D;
+  --bg-card-2:      #141414;
+  --bg-header:      rgba(5,5,5,0.95);
+  --bg-input:       rgba(255,255,255,0.05);
+  --bg-input-focus: rgba(212,167,44,0.06);
+  --bg-input-error: rgba(217,4,22,0.05);
+
+  --text-primary:   #ffffff;
+  --text-secondary: rgba(255,255,255,0.55);
+  --text-muted:     rgba(255,255,255,0.35);
+  --text-faint:     rgba(255,255,255,0.20);
+
+  --border-gold:    rgba(212,167,44,0.2);
+  --border-gold-strong: rgba(212,167,44,0.4);
+  --border-subtle:  rgba(255,255,255,0.08);
+  --border-input:   rgba(255,255,255,0.12);
+
+  --grid-line:      rgba(212,167,44,0.03);
+
+  --shadow-card:    0 8px 32px rgba(0,0,0,0.5);
+
+  --toggle-bg:      rgba(255,255,255,0.08);
+  --toggle-border:  rgba(255,255,255,0.15);
+  --toggle-text:    rgba(255,255,255,0.6);
+}
+
+/* ── Semantic surface tokens — LIGHT ── */
+[data-theme="light"] {
+  --bg-page:        #F7F4EF;
+  --bg-page-alt:    #F0EDE7;
+  --bg-card:        #FFFFFF;
+  --bg-card-2:      #FAF8F5;
+  --bg-header:      rgba(247,244,239,0.96);
+  --bg-input:       rgba(0,0,0,0.03);
+  --bg-input-focus: rgba(212,167,44,0.07);
+  --bg-input-error: rgba(217,4,22,0.04);
+
+  --text-primary:   #0A0A0A;
+  --text-secondary: rgba(10,10,10,0.55);
+  --text-muted:     rgba(10,10,10,0.38);
+  --text-faint:     rgba(10,10,10,0.20);
+
+  --border-gold:    rgba(212,167,44,0.35);
+  --border-gold-strong: rgba(212,167,44,0.6);
+  --border-subtle:  rgba(0,0,0,0.08);
+  --border-input:   rgba(0,0,0,0.14);
+
+  --grid-line:      rgba(212,167,44,0.05);
+
+  --shadow-card:    0 4px 24px rgba(0,0,0,0.1);
+
+  --toggle-bg:      rgba(0,0,0,0.06);
+  --toggle-border:  rgba(0,0,0,0.14);
+  --toggle-text:    rgba(0,0,0,0.55);
+}
+
+/* ── Reset ── */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 { font-family: var(--font-display); }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-card); }
+::-webkit-scrollbar-thumb { background: #D4A72C; border-radius: 2px; }
+
+/* ── Utilities ── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4A72C 0%, #F2C65C 50%, #D4A72C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-gold-border {
+  border: 1px solid var(--border-gold);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Buttons ── */
+.btn-red {
+  background: #D90416;
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(217,4,22,0.35), 0 4px 16px rgba(217,4,22,0.2);
+  transition: all 0.2s ease;
+}
+.btn-red:hover {
+  background: #8F0010;
+  box-shadow: 0 0 32px rgba(217,4,22,0.55), 0 6px 24px rgba(217,4,22,0.35);
+  transform: translateY(-1px);
+}
+.btn-red:focus-visible {
+  outline: 2px solid #F2C65C;
+  outline-offset: 3px;
+}
+.btn-red:active { transform: translateY(0); }
+
+.btn-outline-gold {
+  border: 1px solid var(--border-gold-strong);
+  color: #D4A72C;
+  background: transparent;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: all 0.2s ease;
+}
+.btn-outline-gold:hover {
+  background: rgba(212,167,44,0.08);
+  border-color: #D4A72C;
+}
+.btn-outline-gold:focus-visible {
+  outline: 2px solid #D4A72C;
+  outline-offset: 3px;
+}
+
+/* ── Forms ── */
+.form-input {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-input);
+  border-radius: 4px;
+  padding: 14px 16px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+.form-input::placeholder { color: var(--text-muted); }
+.form-input:focus {
+  border-color: #D4A72C;
+  background: var(--bg-input-focus);
+  box-shadow: 0 0 0 3px rgba(212,167,44,0.12);
+}
+.form-input.error {
+  border-color: #D90416;
+  background: var(--bg-input-error);
+}
+.form-input.error:focus { box-shadow: 0 0 0 3px rgba(217,4,22,0.15); }
+
+/* ── Carousel ── */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ── Animations ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+@keyframes shimmer {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 12px rgba(212,167,44,0.3); }
+  50%       { box-shadow: 0 0 28px rgba(212,167,44,0.7); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.animate-fade-in-up  { animation: fadeInUp  0.7s ease both; }
+.animate-fade-in     { animation: fadeIn    0.6s ease both; }
+.animate-float       { animation: float     3s ease-in-out infinite; }
+.animate-shimmer     { animation: shimmer   2s ease-in-out infinite; }
+.animate-pulse-gold  { animation: pulseGold 2.5s ease-in-out infinite; }
+.animate-spin        { animation: spin 1s linear infinite; }
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
