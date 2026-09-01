@@ -1,9 +1,7 @@
 import {TemaUsuario} from "../componets/tema.tsx";
-import {useRef} from "react"
 import {GiftIllustration} from "../componets/cajaRegalo.tsx";
 export function Hero(){   
     const { dark } = TemaUsuario();
-    const formRef = useRef<HTMLDivElement>(null);
     
     const scrollToParticipa = () => { document.getElementById("participa")?.scrollIntoView({ behavior: "smooth", block: "center", });
     };
@@ -16,7 +14,7 @@ export function Hero(){
         background: dark
           ? "linear-gradient(160deg, #050505 0%, #0D0D0D 50%, #050505 100%)"
           : "linear-gradient(160deg, #F7F4EF 0%, #EDE9E2 50%, #F7F4EF 100%)",
-        minHeight: "calc(100vh - 56px)" }}>
+          minHeight: "calc(100vh - 56px)",}}>
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: `linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px)`,
           backgroundSize: "60px 60px" }} />
