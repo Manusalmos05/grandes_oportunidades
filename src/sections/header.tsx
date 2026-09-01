@@ -1,13 +1,11 @@
 import { TemaUsuario, ThemeToggle } from "../componets/tema";
 import {useRef} from "react"
-
-
 import LogoMark from "../componets/logoMark";
 export function Header(){   
 
      const { dark, toggle } = TemaUsuario();
-     const scrollToForm = () => formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-     const formRef = useRef<HTMLDivElement>(null);
+     const scrollToParticipa = () => { document.getElementById("participa")?.scrollIntoView({ behavior: "smooth", block: "center", });
+    };
 
     return(
      
@@ -31,7 +29,7 @@ export function Header(){
           </p>
           <div className="flex items-center gap-2 flex-shrink-0">
             <ThemeToggle dark={dark} toggle={toggle} />
-            <button onClick={scrollToForm} className="btn-red px-4 py-2 text-[11px] font-black tracking-[0.12em] uppercase">
+            <button onClick={scrollToParticipa} className="btn-red px-4 py-2 text-[11px] font-black tracking-[0.12em] uppercase">
               PARTICIPA
             </button>
           </div>
