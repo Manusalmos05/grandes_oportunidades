@@ -6,7 +6,7 @@ export function RedesCard() {
     <div className="card-gold-border rounded-sm p-6 flex flex-col items-center text-center">
       <div className="flex items-center gap-2 mb-1">
         <div className="w-4 h-px" style={{ background: "#D4A72C" }} />
-        <p className="text-[10px] font-bold tracking-[0.3em] uppercase" style={{ color: "#D4A72C" }}>Escanea y Participa</p>
+        <p className="text-[10px] font-bold tracking-[0.3em] uppercase" style={{ color: "#D4A72C" }}>Síguenos y Participa</p>
         <div className="w-4 h-px" style={{ background: "#D4A72C" }} />
       </div>
       <p className="text-xs mb-5" style={{ color: "var(--text-muted)" }}>Accede al sorteo al instante</p>
@@ -17,24 +17,24 @@ export function RedesCard() {
           }}
         >
           <a
-    href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/" target="_blank" rel="noopener noreferrer"
-    className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
-    aria-label="Facebook"
-  >
-    <IconFacebook />
-  </a>
+            href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/" target="_blank" rel="noopener noreferrer"
+            className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
+            aria-label="Facebook"
+          >
+            <IconFacebook />
+          </a>
 
-  <a
-    href="https://instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"
-    className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
-    aria-label="Instagram"
-  >
-    <IconInstagram />
-  </a>
+          <a
+            href="https://instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"
+            className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
+            aria-label="Instagram"
+          >
+            <IconInstagram />
+          </a>
         </div>
       <div className="flex items-center gap-2 text-xs" style={{ color: "var(--text-secondary)" }}>
         <IconSmartphone />
-        <span>Accede a nuestras redes sociales</span>
+        <span>Visiita nuestras redes sociales</span>
       </div>
     </div>
 

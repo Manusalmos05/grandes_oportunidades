@@ -38,9 +38,9 @@ export function TiendaSection() {
                       </p>
                       <address className="not-italic space-y-4 mb-8">
                         {[
-                          { icon: <IconMapPin />, text: "Calle Principal 12, Local 3 — Tu Ciudad" },
-                          { icon: <IconPhone />,  text: "+34 600 000 000" },
-                          { icon: <IconClock />,  text: "Lun–Sáb: 10:00–20:30 · Dom: 11:00–14:00" },
+                          { icon: <IconMapPin />, text: "Calle Federico Rogel 1 — Orihuela" },
+                          { icon: <IconPhone />,  text: "+34 965 30 44 94" },
+                          { icon: <IconClock />,  text: "Lun–Sáb: 10:00–13:45 | 17:00–20:45" },
                         ].map(({ icon, text }, i) => (
                           <div key={i} className="flex items-center gap-3 text-sm" style={{ color: "var(--text-secondary)" }}>
                             <span style={{ color: "#D4A72C" }}>{icon}</span>
@@ -51,11 +51,20 @@ export function TiendaSection() {
                       <div className="flex items-center gap-4">
                         <span className="text-[10px] tracking-widest uppercase" style={{ color: "var(--text-faint)" }}>Síguenos</span>
                         {[
-                          { icon: <IconInstagram />, label: "Instagram" },
-                          { icon: <IconFacebook />,  label: "Facebook" },
-                          { icon: <IconTikTok />,    label: "TikTok" },
-                        ].map(({ icon, label }) => (
-                          <a key={label} href="#" aria-label={label}
+                            {
+                              key: "Instagram",
+                              label: "Instagram",
+                              href: "https://instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA==",
+                              icon: <IconInstagram />,
+                            },
+                            {
+                              key: "Facebook",
+                              label: "Facebook",
+                              href: "https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/",
+                              icon: <IconFacebook />,
+                            },
+                        ].map(({  key, label, href, icon }) => (
+                          <a key={key} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
                             className="w-10 h-10 flex items-center justify-center rounded-sm transition-all hover:-translate-y-0.5"
                             style={{ border: "1px solid var(--border-subtle)", color: "var(--text-secondary)" }}
                             onMouseEnter={e => (e.currentTarget.style.color = "#D4A72C")}

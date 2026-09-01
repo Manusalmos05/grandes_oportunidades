@@ -1,5 +1,5 @@
 import { BenefitsSection } from "../sections/benefistSection.tsx";
-import { PrizesSection } from "../sections/prize.tsx";
+import { RulesSection } from "../sections/rules.tsx";
 import { Header } from "../sections/header.tsx";
 import {Hero} from "../sections/hero.tsx";
 import {ParticipaSection} from "../sections/participa.tsx";
@@ -28,7 +28,7 @@ export default function App() {
       
       <ParticipaSection />
 
-      <PrizesSection />
+      <RulesSection />
 
       <TiendaSection />
       

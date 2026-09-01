@@ -28,12 +28,15 @@ export function Hero(){
           {/* Left copy */}
           <div className="flex-1 text-center md:text-left max-w-xl mx-auto md:mx-0">
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in">
+              
               <div className="w-8 h-px" style={{ background: "#D4A72C" }} />
+              
               <span className="text-xs font-bold tracking-[0.3em] uppercase" style={{ color: "#D4A72C" }}>Estamos de Aniversario</span>
               <div className="w-8 h-px" style={{ background: "#D4A72C" }} />
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black uppercase leading-none tracking-tight mb-6 animate-fade-in-up delay-100"
               style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
+              <span className="block text-gold-gradient" style={{ fontSize: "1.1em" }}>50 Años...</span>
               <span className="block">¡Y lo</span>
               <span className="block">celebramos</span>
               <span className="block text-gold-gradient" style={{ fontSize: "1.1em" }}>CONTIGO!</span>
