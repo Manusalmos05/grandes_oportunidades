@@ -8,7 +8,7 @@ export function TiendaSection() {
                     {/* Image */}
                     <div className="relative rounded-sm overflow-hidden" style={{ minHeight: 350 }}>
                       <img src="/grandes_oportunidades/images/tienda.png"
-                        alt="Exterior de la tienda Grandes Oportunidades — moda para toda la familia"
+                        alt="Exterior de la tienda Grandes Oportunidades antes y ahora"
                         className="w-full h-full object-cover" style={{ filter: "brightness(0.55) saturate(0.7)", minHeight: 350 }}
                         loading="lazy" />
                       <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(217,4,22,0.12) 0%, rgba(5,5,5,0.4) 100%)" }} />
