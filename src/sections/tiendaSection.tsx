@@ -7,7 +7,7 @@ export function TiendaSection() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Image */}
                     <div className="relative rounded-sm overflow-hidden" style={{ minHeight: 350 }}>
-                      <img src={`${import.meta.env.BASE_URL}images/tienda.png`}
+                      <img src={`${import.meta.env.BASE_URL}/tienda.png`}
                         alt="Exterior de la tienda Grandes Oportunidades antes y ahora"
                         className="w-full h-full object-cover" style={{ filter: "brightness(0.55) saturate(0.7)", minHeight: 350 }}
                         loading="lazy" />
