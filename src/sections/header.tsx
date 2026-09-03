@@ -15,9 +15,9 @@ export function Header(){
         borderBottom: "1px solid var(--border-gold)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="#" className="flex items-center gap-2.5 flex-shrink-0" aria-label="Grandes Oportunidades — Inicio">
-            <LogoMark size={34} />
+            <LogoMark size={40} />
             <div className="hidden sm:block">
-              <p className="font-black text-sm tracking-[0.08em] uppercase leading-tight"
+              <p className="font-black text-sm tracking-[0.09em] uppercase leading-tight"
                 style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
                 Grandes <span style={{ color: "#D4A72C" }}>Oportunidades</span>
               </p>

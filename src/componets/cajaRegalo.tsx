@@ -67,7 +67,7 @@ export function GiftIllustration() {
           <polygon points="165,220 166,223 169,223 167,225 167,228 165,226 163,228 163,225 161,223 164,223" fill="#F2C65C" opacity="0.8"/>
         </svg>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <LogoMark size={32} />
+          <LogoMark size={40} />
         </div>
       </div>
       {/* Balloons */}
