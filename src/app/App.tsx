@@ -28,11 +28,11 @@ export default function App() {
       
       <ParticipaSection />
 
-      <RulesSection />
-
       <TiendaSection />
       
       <GraciasSection />
+      
+      <RulesSection />
 
       <FooterSection />
       

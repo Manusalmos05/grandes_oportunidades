@@ -20,8 +20,8 @@ export function BenefitsSection() {
                       desc="50 Tickets regalo por 50 €." />
                     <BenefitCard delay="delay-200" icon={<IconGift />} title="Premiamos tu fidelidad"
                       desc="Haciendo lo que más nos gusta: compartir contigo." />
-                    <BenefitCard delay="delay-300" icon={<IconCalendar />} title="Sorteo: 12 de Dic. 2026"
-                      desc="50 Años contigo. ¡Gracias por estar aquí!" />
+                    <BenefitCard delay="delay-300" icon={<IconCalendar />} title="Sorteo 11 de Dic. 2026"
+                      desc="¡Gracias por acompañarnos!" />
                   </div>
                 </div>
               </section>

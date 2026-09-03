@@ -35,7 +35,23 @@ const rules: Rule[] = [
 
           <p>
             Podrás participar a través de las publicaciones oficiales del
-            concurso en nuestras redes sociales. Para que una participación sea
+            concurso en <a
+              href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-colors hover:opacity-70"
+              style={{ color: "#D90416" }}
+            >
+              Facebook
+            </a> e <a
+              href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-colors hover:opacity-70"
+              style={{ color: "#D90416" }}
+            >
+              Instagram
+            </a>. Para que una participación sea
             válida, deberá cumplir las instrucciones indicadas en la
             publicación correspondiente, como seguir nuestra cuenta, indicar
             "Me gusta", comentar o etiquetar a otras personas.
@@ -113,10 +129,8 @@ const rules: Rule[] = [
     title: "PREMIOS",
     content: (
       <p>
-        El concurso contará con <strong>50 premios</strong>, distribuidos entre
-        las dos modalidades de participación. Las características y el valor de
-        cada premio serán los indicados en la sección de premios y/o en las
-        publicaciones oficiales del concurso.
+        El concurso contará con <strong>50 tickets</strong>, distribuidos entre
+        las dos modalidades de participación por valor de <strong>50 €</strong> para canjear en nuestra tienda. Cada ticket es válido para un único uso y no es transferible ni canjeable por dinero en efectivo.
       </p>
     ),
   },
@@ -356,7 +370,7 @@ export function RulesSection() {
 
         {/* RESUMEN */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-px mt-12 rounded-sm overflow-hidden"
+          className="grid grid-cols-3 sm:grid-cols-3 gap-px mt-12 rounded-sm overflow-hidden"
           style={{
             background: "var(--border-subtle)",
             border: "1px solid var(--border-subtle)",
@@ -419,6 +433,7 @@ export function RulesSection() {
             </span>
           </div>
         </div>
+      
 
         {/* BASES */}
         <div className="mt-8 space-y-3">

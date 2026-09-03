@@ -1,4 +1,4 @@
-import {IconFacebook, IconInstagram, IconTikTok} from "../icons/icons.tsx";
+import {IconFacebook, IconInstagram, IconMapPin, IconSmartphone, IconPhone} from "../icons/icons.tsx";
 import LogoMark from "../componets/logoMark.tsx";
 
 export function FooterSection() {
@@ -19,11 +19,11 @@ export function FooterSection() {
               </p>
               <div className="flex items-center gap-3">
                 {[
-                  { icon: <IconInstagram />, label: "Instagram" },
-                  { icon: <IconFacebook />,  label: "Facebook" },
+                  { icon: <IconInstagram />, label: "Instagram", href: "https://instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA==" },
+                  { icon: <IconFacebook />,  label: "Facebook", href: "https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/" },
                  
-                ].map(({ icon, label }) => (
-                  <a key={label} href="#" aria-label={label} className="transition-colors"
+                ].map(({ icon, label, href }) => (
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="transition-colors"
                     style={{ color: "var(--text-muted)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "#D4A72C")}
                     onMouseLeave={e => (e.currentTarget.style.color = "var(--text-muted)")}>
@@ -48,10 +48,10 @@ export function FooterSection() {
             </div>
             <div>
               <p className="text-[10px] font-bold tracking-[0.3em] uppercase mb-4" style={{ color: "#D4A72C" }}>Contacto</p>
-              <address className="not-italic space-y-2 text-sm" style={{ color: "var(--text-muted)" }}>
-                <p>Calle Federico Rogel 1 — Orihuela</p>
-                <p>+34 965 30 44 94</p>
-                
+              <address className="not-italic text-sm text-[var(--text-muted)] flex flex-col gap-2">
+                <p className="flex items-center gap-2">{<IconMapPin />}Calle Alfonso XIII 36 — Orihuela</p>
+                <p className="flex items-center gap-2">{<IconPhone />}+34 965 30 44 94</p>
+                <p className="flex items-center gap-2">{<IconSmartphone />}638 677 315</p>
               </address>
             </div>
           </div>

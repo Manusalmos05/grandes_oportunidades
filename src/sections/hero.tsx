@@ -26,11 +26,7 @@ export function Hero(){
           {/* Left copy */}
           <div className="flex-1 text-center md:text-left max-w-xl mx-auto md:mx-0">
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in">
-              
-              <div className="w-8 h-px" style={{ background: "#D4A72C" }} />
-              
-              <span className="text-xs font-bold tracking-[0.3em] uppercase" style={{ color: "#D4A72C" }}>Estamos de Aniversario</span>
-              <div className="w-8 h-px" style={{ background: "#D4A72C" }} />
+
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-black uppercase leading-none tracking-tight mb-6 animate-fade-in-up delay-100"
               style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
@@ -40,8 +36,8 @@ export function Hero(){
               <span className="block text-gold-gradient" style={{ fontSize: "1.1em" }}>CONTIGO!</span>
             </h1>
             <p className="text-base sm:text-lg leading-relaxed mb-8 animate-fade-in-up delay-200 max-w-md mx-auto md:mx-0"
-              style={{ color: "var(--text-secondary)" }}>
-              Participa en nuestro sorteo especial de aniversario y gana increíbles premios para toda la familia.
+              style={{ color: "var(--text-secondary)" }}><strong>
+              Participa en nuestro sorteo especial de aniversario y gana increíbles premios para toda la familia.</strong>
             </p>
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 animate-fade-in-up delay-300">
               <button onClick={scrollToParticipa} className="btn-red px-8 py-4 text-sm font-black tracking-[0.15em] uppercase w-full sm:w-auto">

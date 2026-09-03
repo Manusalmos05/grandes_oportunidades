@@ -22,11 +22,11 @@ export function GraciasSection() {
                     {[...Array(5)].map((_, i) => <IconStar key={i} />)}
                   </div>
                   <p className="text-sm font-semibold tracking-[0.3em] uppercase mb-4" style={{ color: "var(--text-muted)" }}>
-                    Un millón de gracias
+                    50 millones de gracias
                   </p>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-6"
                     style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
-                    GRACIAS POR SER PARTE<br />DE NUESTRO ANIVERSARIO
+                    GRACIAS POR SER PARTE<br />DE NUESTA HISTORIA
                   </h2>
                   <div className="flex items-center justify-center gap-4 mb-6">
                     <div className="h-px flex-1 max-w-[100px]" style={{ background: "linear-gradient(to right, transparent, #D90416)" }} />
@@ -34,7 +34,7 @@ export function GraciasSection() {
                     <div className="h-px flex-1 max-w-[100px]" style={{ background: "linear-gradient(to left, transparent, #D90416)" }} />
                   </div>
                   <p className="text-5xl sm:text-6xl md:text-7xl" style={{ fontFamily: "Dancing Script, cursive", color: "#F2C65C", lineHeight: 1.2 }}>
-                    ¡Vamos por más!
+                    ¡Vamos por 50 años más!
                   </p>
                   <div className="mt-10">
                     <button onClick={scrollToParticipa} className="btn-red px-10 py-4 text-sm font-black tracking-[0.15em] uppercase">

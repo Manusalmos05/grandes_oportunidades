@@ -34,7 +34,7 @@ export function RedesCard() {
         </div>
       <div className="flex items-center gap-2 text-xs" style={{ color: "var(--text-secondary)" }}>
         <IconSmartphone />
-        <span>Visiita nuestras redes sociales</span>
+        <span>Visita nuestras redes sociales</span>
       </div>
     </div>
 

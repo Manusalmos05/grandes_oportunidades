@@ -1,5 +1,6 @@
 {
-  "description": "Promote and manage a special anniversary raffle for a local fashion store, allowing users to easily participate via a QR code and win exclusive prizes.",
+  "description": "Promociona y gestiona un sorteo especial de aniversario para una tienda de moda local. Permite participar fácilmente mediante un código QR y ganar premios exclusivos.",
+  "language": "es",
   "robots": {
     "index": false
   },

@@ -2,7 +2,7 @@
 
 
 // ─── Step Item ────────────────────────────────────────────────────────────────
-export function StepItem({ num, title, desc }: { num: string; title: string; desc: string }) {
+export function StepItem({ num, title, children}: { num: string; title: string; children: React.ReactNode }) {
   return (
     <div className="flex items-start gap-4 mb-8 last:mb-0">
       <div className="flex-shrink-0 w-14">
@@ -13,7 +13,7 @@ export function StepItem({ num, title, desc }: { num: string; title: string; des
           <div className="w-6 h-px" style={{ background: "#D90416" }} />
           <p className="text-[10px] font-bold tracking-[0.3em] uppercase" style={{ color: "#D90416" }}>{title}</p>
         </div>
-        <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{desc}</p>
+        <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>{children}</p>
       </div>
     </div>
   );
