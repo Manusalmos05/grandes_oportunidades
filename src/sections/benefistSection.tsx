@@ -16,12 +16,12 @@ export function BenefitsSection() {
         <section className="py-16 md:py-20" style={{ background: "var(--bg-page-alt)", borderTop: "1px solid var(--border-gold)" }}>
                 <div className="max-w-5xl mx-auto px-4 sm:px-6">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <BenefitCard delay="delay-100" icon={<IconTicket />} title="2,500 € en Premios"
-                      desc="50 Tickets regalo por 50 €." />
+                    <BenefitCard delay="delay-100" icon={<IconTicket />} title="2,000 € en Premios"
+                      desc="100 Tickets regalo por 20 €." />
                     <BenefitCard delay="delay-200" icon={<IconGift />} title="Premiamos tu fidelidad"
                       desc="Haciendo lo que más nos gusta: compartir contigo." />
-                    <BenefitCard delay="delay-300" icon={<IconCalendar />} title="Sorteo 11 de Dic. 2026"
-                      desc="¡Gracias por acompañarnos!" />
+                    <BenefitCard delay="delay-300" icon={<IconCalendar />} title="Una semana de sorteo"
+                      desc="7, 8, 9, 10 y 11 de Diciembre" />
                   </div>
                 </div>
               </section>

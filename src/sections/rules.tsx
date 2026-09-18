@@ -54,11 +54,11 @@ const rules: Rule[] = [
             </a>. Para que una participación sea
             válida, deberá cumplir las instrucciones indicadas en la
             publicación correspondiente, como seguir nuestra cuenta, indicar
-            "Me gusta", comentar o etiquetar a otras personas.
+            "Me gusta", y etiquetar a otras personas.
           </p>
 
           <p className="mt-2">
-            Los <strong>25 ganadores de esta modalidad</strong> serán
+            Los <strong>50 ganadores de esta modalidad</strong> serán
             seleccionados mediante una herramienta de selección aleatoria entre
             todas las participaciones que cumplan las condiciones establecidas.
           </p>
@@ -81,8 +81,8 @@ const rules: Rule[] = [
           </p>
 
           <p className="mt-2">
-            Los <strong>25 ganadores de esta modalidad</strong> serán
-            seleccionados mediante la extracción aleatoria de 25 tickets del
+            Los <strong>50 ganadores de esta modalidad</strong> serán
+            seleccionados mediante la extracción aleatoria de 50 tickets del
             buzón.
           </p>
         </div>
@@ -96,23 +96,23 @@ const rules: Rule[] = [
     content: (
       <div>
         <p>
-          El sorteo se realizará el{" "}
-          <strong>12 de diciembre de 2026</strong>.
+          El sorteo se realizará del{" "}
+          <strong>7 al 11 de diciembre de 2026</strong>.
         </p>
 
         <p className="mt-3">
-          Se seleccionarán un total de <strong>50 personas ganadoras</strong>:
+          Se seleccionarán un total de <strong>100 personas ganadoras</strong>:
         </p>
 
         <ul className="mt-3 space-y-2 list-none">
           <li className="flex gap-2">
             <span style={{ color: "#D4A72C" }}>✦</span>
-            <span>25 ganadores mediante redes sociales.</span>
+            <span>50 ganadores mediante redes sociales.</span>
           </li>
 
           <li className="flex gap-2">
             <span style={{ color: "#D4A72C" }}>✦</span>
-            <span>25 ganadores mediante tickets físicos.</span>
+            <span>50 ganadores mediante tickets físicos.</span>
           </li>
         </ul>
 
@@ -129,8 +129,8 @@ const rules: Rule[] = [
     title: "PREMIOS",
     content: (
       <p>
-        El concurso contará con <strong>50 tickets</strong>, distribuidos entre
-        las dos modalidades de participación por valor de <strong>50 €</strong> para canjear en nuestra tienda. Cada ticket es válido para un único uso y no es transferible ni canjeable por dinero en efectivo.
+        El concurso contará con <strong>100 tickets</strong>, distribuidos entre
+        las dos modalidades de participación por valor de <strong>20 €</strong> para canjear en nuestra tienda. Cada ticket es válido para un único uso y no es transferible ni canjeable por dinero en efectivo.
       </p>
     ),
   },
@@ -384,7 +384,7 @@ export function RulesSection() {
               className="block text-2xl md:text-3xl font-black"
               style={{ color: "#D4A72C" }}
             >
-              50
+              100
             </span>
 
             <span
@@ -403,7 +403,7 @@ export function RulesSection() {
               className="block text-2xl md:text-3xl font-black"
               style={{ color: "#D4A72C" }}
             >
-              25 + 25
+              50 + 50
             </span>
 
             <span
@@ -421,15 +421,15 @@ export function RulesSection() {
             <span
               className="block text-2xl md:text-3xl font-black"
               style={{ color: "#D4A72C" }}
-            >
-              12 DIC
+            >DIAS DE SORTEO
+              
             </span>
 
             <span
               className="block text-[10px] md:text-xs font-bold tracking-widest mt-1"
               style={{ color: "var(--text-muted)" }}
             >
-              DÍA DEL SORTEO
+              del 7 al 11 de Diciembre
             </span>
           </div>
         </div>
