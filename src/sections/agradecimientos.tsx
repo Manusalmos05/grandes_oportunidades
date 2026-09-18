@@ -26,7 +26,7 @@ export function GraciasSection() {
                   </p>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-6"
                     style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
-                    GRACIAS POR SER PARTE<br />DE NUESTA HISTORIA
+                    GRACIAS POR SER PARTE<br />DE NUESTRA HISTORIA
                   </h2>
                   <div className="flex items-center justify-center gap-4 mb-6">
                     <div className="h-px flex-1 max-w-[100px]" style={{ background: "linear-gradient(to right, transparent, #D90416)" }} />

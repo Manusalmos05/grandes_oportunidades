@@ -1,0 +1,39 @@
+{
+  "version": "0.2",
+  "language": "es",
+  "import": [
+    "@cspell/dict-es-es/cspell-ext.json"
+  ],
+  "files": [
+    "src/**/*.{ts,tsx,js,jsx}",
+    "*.{ts,tsx,js,jsx,json,md}"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "public"
+  ],
+  "words": [
+    "componets",
+    "benefist",
+    "RGPD",
+    "cspell",
+    "buzón",
+    "cumplimentado",
+    "sortearán",
+    "transmisión",
+    "ganaras",
+    "aceptara",
+    "canjear",
+    "canjeable",
+    "físicos",
+    "válida",
+    "gusta",
+    "etiquetar",
+    "go",
+    "orihuela"
+  ],
+  "ignoreRegExpList": [
+    "<[^>]+>"
+  ]
+}

@@ -25,7 +25,7 @@ export function Header(){
           </a>
           <p className="hidden md:block text-[11px] tracking-wider italic text-center flex-1"
             style={{ color: "var(--text-muted)" }}>
-            Cada día más Grandes - Cada día más Oprtunidades.
+            Cada día más Grandes - Cada día más Oportunidades.
           </p>
           <div className="flex items-center gap-2 flex-shrink-0">
             <ThemeToggle dark={dark} toggle={toggle} />

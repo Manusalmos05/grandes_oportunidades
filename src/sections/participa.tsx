@@ -36,7 +36,7 @@ export function ParticipaSection() {
             </StepItem>
           
           <StepItem num="02" title="Dale Like">
-            A la publicacion del sorteo en {" "}
+            A la publicación del sorteo en {" "}
             <a
                 href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/"
                 target="_blank"

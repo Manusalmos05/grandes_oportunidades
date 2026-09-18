@@ -60,7 +60,7 @@ const rules: Rule[] = [
           <p className="mt-2">
             Los <strong>50 ganadores de esta modalidad</strong> serán
             seleccionados mediante una herramienta de selección aleatoria entre
-            todas las participaciones que cumplan las condiciones establecidas.
+            todas las participaciones que cumplan las condiciones establecidas. Se sortearán el día 11 de diciembre de 2026.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const rules: Rule[] = [
           <p className="mt-2">
             Los <strong>50 ganadores de esta modalidad</strong> serán
             seleccionados mediante la extracción aleatoria de 50 tickets del
-            buzón.
+            buzón. Se sortearán 10 tickets cada día desde el 7 hasta el 11 de diciembre, en transmisión en vivo por nuestras redes sociales.
           </p>
         </div>
       </div>
@@ -98,6 +98,14 @@ const rules: Rule[] = [
         <p>
           El sorteo se realizará del{" "}
           <strong>7 al 11 de diciembre de 2026</strong>.
+        </p>
+
+        <p className="mt-3">
+          Se seleccionarán <strong>10 tickets diarios de forma física</strong> durante los días 7, 8, 9, 10 y 11 de Diciembre, durante transmisiones en vivo que darán constancia de la transparencia del sorteo.
+        </p>
+
+        <p className="mt-3">
+          Se seleccionarán <strong>50 tickets forma virtual</strong> el día 11 de Diciembre.
         </p>
 
         <p className="mt-3">
@@ -226,7 +234,7 @@ const rules: Rule[] = [
 
         <p className="transition-colors hover:text-[#D4A72C]"
             style={{ color: "#D4A72C" }}
-        >Despues de la finalización del concurso, los datos personales serán eliminados.
+        >Después de la finalización del concurso, los datos personales serán eliminados.
         </p>
       </div>
     ),
@@ -419,9 +427,9 @@ export function RulesSection() {
             style={{ background: "var(--bg-card-2)" }}
           >
             <span
-              className="block text-2xl md:text-3xl font-black"
+              className="block text-2xl md:text-2xl font-black"
               style={{ color: "#D4A72C" }}
-            >DIAS DE SORTEO
+            >GANADORES DIARIOS
               
             </span>
 
