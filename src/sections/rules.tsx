@@ -432,13 +432,13 @@ export function RulesSection() {
           </div>
 
           <div
-            className="p-5 md:p-6 text-center"
+            className="w-full max-w-md mx-auto p-4 sm:p-5 md:p-6 text-center whitespace-normal break-words justify-center items-center"
             style={{ background: "var(--bg-card-2)" }}
           >
             <span
-              className="block text-2xl md:text-2xl font-black"
+              className="block text-xl sm:text-2xl md:text-3xl font-black leading-tight tracking-tight"
               style={{ color: "#D4A72C" }}
-            >GANADORES DIARIOS
+            >PREMIOS DIARIOS
               
             </span>
 
