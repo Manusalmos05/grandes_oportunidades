@@ -22,7 +22,7 @@ export function ParticipaSection() {
               >
                 Facebook
               </a>{" "}
-              e{" "}
+              o{" "}
               <a
                 href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
                 target="_blank"
@@ -44,7 +44,7 @@ export function ParticipaSection() {
                 className="font-semibold transition-colors hover:opacity-70"
                 style={{ color: "#D4A72C" }}
               >Facebook</a>
-              {" "}e{" "}
+              {" "}o{" "}
               <a
                 href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
                 target="_blank"
@@ -64,7 +64,7 @@ export function ParticipaSection() {
             >
               Facebook
             </a>
-            {" "}e{" "}
+            {" "}o{" "}
             <a
               href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
               target="_blank"

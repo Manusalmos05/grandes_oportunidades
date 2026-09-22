@@ -43,7 +43,7 @@ const rules: Rule[] = [
               style={{ color: "#D90416" }}
             >
               Facebook
-            </a> e <a
+            </a> o <a
               href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
@@ -125,6 +125,10 @@ const rules: Rule[] = [
         </ul>
 
         <p className="mt-3">
+          Cuantas más veces participes en cada modalidad, más oportunidades tendrás de ganar.
+        </p>
+
+        <p className="mt-3">
           La selección será realizada de forma aleatoria, sin intervención
           subjetiva en la elección de las personas ganadoras.
         </p>
@@ -191,7 +195,12 @@ const rules: Rule[] = [
 
           <li className="flex gap-2">
             <span style={{ color: "#D4A72C" }}>—</span>
-            Participaciones duplicadas en redes sociales, sólo ganaras una vez en cada plataforma.
+            Participaciones duplicadas en físico, sólo ganaras <strong>una</strong> vez en la tienda.
+          </li>
+
+          <li className="flex gap-2">
+            <span style={{ color: "#D4A72C" }}>—</span>
+            Participaciones duplicadas en redes sociales, sólo ganaras <strong>una</strong> vez en cada plataforma.
           </li>
 
           <li className="flex gap-2">
