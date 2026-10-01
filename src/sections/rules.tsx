@@ -387,7 +387,7 @@ export function RulesSection() {
 
         {/* RESUMEN */}
         <div
-          className="grid grid-cols-3 sm:grid-cols-3 gap-px mt-12 rounded-sm overflow-hidden"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-px mt-12 rounded-sm overflow-hidden"
           style={{
             background: "var(--border-subtle)",
             border: "1px solid var(--border-subtle)",

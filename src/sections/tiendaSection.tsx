@@ -6,10 +6,10 @@ export function TiendaSection() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Image */}
-                    <div className="relative rounded-sm overflow-hidden" style={{ minHeight: 350 }}>
+                    <div className="relative rounded-sm overflow-hidden min-h-[220px] sm:min-h-[300px]">
                       <img src={`${import.meta.env.BASE_URL}tienda2.png`}
                         alt="Exterior de la tienda Grandes Oportunidades antes y ahora"
-                        className="w-full h-auto max-h-[350px] object-contain" style={{ filter: "brightness(0.60) saturate(0.7)", minHeight: 300 }}
+                        className="w-full h-auto max-h-[350px] object-contain"
                         loading="lazy" />
                       <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(217,4,22,0.12) 0%, rgba(5,5,5,0.4) 100%)" }} />
                       <div className="absolute bottom-6 left-6">
@@ -41,9 +41,9 @@ export function TiendaSection() {
                           { icon: <IconSmartphone />, text: "638 677 315" },
                           { icon: <IconClock />,  text: "Lun–Sáb: 10:00–13:45 | 17:00–20:45" },
                         ].map(({ icon, text }, i) => (
-                          <div key={i} className="flex items-center gap-3 text-sm" style={{ color: "var(--text-secondary)" }}>
+                          <div key={i} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
                             <span style={{ color: "#D4A72C" }}>{icon}</span>
-                            <span>{text}</span>
+                            <span className="min-w-0 break-words">{text}</span>
                           </div>
                         ))}
                       </address>

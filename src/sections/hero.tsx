@@ -28,7 +28,7 @@ export function Hero(){
             <div className="inline-flex items-center gap-2 mb-6 animate-fade-in">
 
             </div>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-black uppercase leading-none tracking-tight mb-6 animate-fade-in-up delay-100"
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase leading-tight tracking-tight mb-6 animate-fade-in-up delay-100"
               style={{ fontFamily: "Montserrat", color: "var(--text-primary)" }}>
               <span className="block text-gold-gradient" style={{ fontSize: "1.1em" }}>50 Años...</span>
               <span className="block">¡Y lo</span>
