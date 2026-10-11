@@ -17,7 +17,8 @@ export function RedesCard() {
           }}
         >
           <a
-            href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/" target="_blank" rel="noopener noreferrer"
+            href="https://www.facebook.com/share/v/1Q3nGVwTJD/?mibextid=wwXIfr" 
+            target="_blank" rel="noopener noreferrer"
             className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
             aria-label="Facebook"
           >
@@ -25,7 +26,7 @@ export function RedesCard() {
           </a>
 
           <a
-            href="https://instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"
+            href="https://www.instagram.com/reel/DeXXL0uMvDl/?srtk=MTBia2l3dXhmZzRoZA==" target="_blank" rel="noopener noreferrer"
             className="flex items-center justify-center p-4 rounded-sm transition-transform hover:scale-110"
             aria-label="Instagram"
           >

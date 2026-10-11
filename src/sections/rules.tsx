@@ -36,7 +36,7 @@ const rules: Rule[] = [
           <p>
             Podrás participar a través de las publicaciones oficiales del
             concurso en <a
-              href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/"
+              href="https://www.facebook.com/share/v/1Q3nGVwTJD/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold transition-colors hover:opacity-70"
@@ -44,7 +44,7 @@ const rules: Rule[] = [
             >
               Facebook
             </a> o <a
-              href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
+              href="https://www.instagram.com/reel/DeXXL0uMvDl/?srtk=MTBia2l3dXhmZzRoZA=="
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold transition-colors hover:opacity-70"

@@ -38,7 +38,7 @@ export function ParticipaSection() {
           <StepItem num="02" title="Dale Like">
             A la publicación del sorteo en {" "}
             <a
-                href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/"
+                href="https://www.facebook.com/share/v/1Q3nGVwTJD/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold transition-colors hover:opacity-70"
@@ -46,7 +46,7 @@ export function ParticipaSection() {
               >Facebook</a>
               {" "}o{" "}
               <a
-                href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
+                href="https://www.instagram.com/reel/DeXXL0uMvDl/?srtk=MTBia2l3dXhmZzRoZA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold transition-colors hover:opacity-70"
@@ -56,7 +56,7 @@ export function ParticipaSection() {
           <StepItem num="03" title="Etiqueta" >
             A un amigo en los comentarios de la publicación del sorteo en {" "}
             <a
-              href="https://www.facebook.com/p/Grandes-Oportunidades-Orihuela-100044479254829/"
+              href="https://www.facebook.com/share/v/1Q3nGVwTJD/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold transition-colors hover:opacity-70"
@@ -66,7 +66,7 @@ export function ParticipaSection() {
             </a>
             {" "}o{" "}
             <a
-              href="https://www.instagram.com/go_orihuela?igshid=MzRlODBiNWFlZA%3D%3D"
+              href="https://www.instagram.com/reel/DeXXL0uMvDl/?srtk=MTBia2l3dXhmZzRoZA=="
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold transition-colors hover:opacity-70"
