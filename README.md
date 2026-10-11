@@ -43,6 +43,6 @@ Me motiva seguir creciendo profesionalmente, explorar nuevas tecnologías y ampl
 
 ---
 
-🔗 **Proyecto:** [Grandes Oportunidades — 50.º Aniversario](https://github.com/Manusalmos05)
+🔗 **Proyecto:** [Grandes Oportunidades — 50.º Aniversario](https://github.com/Manusalmos05/grandes_oportunidades)
 
 *Un proyecto con historia, un reto tecnológico y una forma muy especial de devolver algo a un lugar que también forma parte de la mía.*
