@@ -6,14 +6,7 @@ import {ParticipaSection} from "../sections/participa.tsx";
 import { TiendaSection } from "../sections/tiendaSection.tsx";
 import { GraciasSection } from "../sections/agradecimientos.tsx";
 import { FooterSection } from "../sections/footerSection.tsx";
-import Clarity from '@microsoft/clarity';
-
-
-const ID_CLARITY = import.meta.env.VITE_ID_CLARITY;
-
-if (ID_CLARITY) {
-  Clarity.init(ID_CLARITY);
-}
+import CookieConsent from '../componets/CookieConsent';
 
 // ─── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
@@ -36,6 +29,8 @@ export default function App() {
       <RulesSection />
 
       <FooterSection />
+
+      <CookieConsent />
       
     </div>
   );
