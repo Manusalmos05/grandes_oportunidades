@@ -4,7 +4,7 @@ import Clarity from '@microsoft/clarity';
 import './CookieConsent.css';
 
 const CONSENT_KEY = 'go-cookie-consent';
-const CLARITY_ID = import.meta.env.VITE_ID_CLARITY;
+const CLARITY_ID = 'yx3qcbitxt';
 
 type ConsentChoice = 'accepted' | 'rejected';
 
