@@ -10,16 +10,22 @@ type ConsentChoice = 'accepted' | 'rejected';
 
 let clarityInitialized = false;
 
-function enableClarity() {
+function initializeClarity() {
+  if (clarityInitialized) return;
+
   if (!CLARITY_ID) {
-    console.warn('Falta VITE_ID_CLARITY en el entorno.');
+    console.warn('Falta el identificador de Microsoft Clarity.');
     return;
   }
 
-  if (!clarityInitialized) {
-    Clarity.init(CLARITY_ID);
-    clarityInitialized = true;
-  }
+  Clarity.init(CLARITY_ID);
+  clarityInitialized = true;
+}
+
+function enableClarity() {
+  initializeClarity();
+
+  if (!clarityInitialized) return;
 
   Clarity.consentV2({
     ad_Storage: 'denied',
@@ -28,28 +34,22 @@ function enableClarity() {
 }
 
 function disableClarity() {
+
   if (!clarityInitialized) return;
 
   Clarity.consentV2({
     ad_Storage: 'denied',
     analytics_Storage: 'denied',
   });
-
-  // Revoca el consentimiento y elimina las cookies de Clarity.
-  Clarity.consent(false);
 }
-
 export default function CookieConsent() {
   const [choice, setChoice] = useState<ConsentChoice | null>(null);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const [analytics, setAnalytics] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem(CONSENT_KEY);
 
     if (saved === 'accepted' || saved === 'rejected') {
       setChoice(saved);
-      setAnalytics(saved === 'accepted');
 
       if (saved === 'accepted') {
         enableClarity();
@@ -64,8 +64,6 @@ export default function CookieConsent() {
 
     localStorage.setItem(CONSENT_KEY, nextChoice);
     setChoice(nextChoice);
-    setAnalytics(allowAnalytics);
-    setSettingsOpen(false);
 
     if (allowAnalytics) {
       enableClarity();
@@ -74,19 +72,8 @@ export default function CookieConsent() {
     }
   }
 
-  // El usuario ya ha elegido y no está cambiando sus preferencias.
-  if (choice !== null && !settingsOpen) {
-    return (
-      <button
-        type="button"
-        className="cookie-settings-trigger"
-        onClick={() => setSettingsOpen(true)}
-        aria-label="Configurar cookies"
-      >
-        Configurar cookies
-      </button>
-    );
-  }
+  // Si ya existe una elección, no mostramos el banner.
+  if (choice !== null) return null;
 
   return (
     <div
@@ -106,110 +93,55 @@ export default function CookieConsent() {
           </span>
 
           <h2 id="cookie-title">
-            {settingsOpen
-              ? 'Configura tus cookies'
-              : 'Tu privacidad importa'}
+            Tu privacidad importa
           </h2>
         </div>
 
         <p id="cookie-description">
-          Usaremos cookies solo para contar las vistas de página y mejorar la experiencia de navegación. No se recopilará información personal ni se compartirá con terceros.
+          Usaremos analítica únicamente si nos das tu
+          consentimiento, para comprender cómo se utiliza
+          la web y mejorar la experiencia de navegación.
         </p>
 
         <div className="cookie-consent__details">
           <div className="cookie-consent__detail">
             <div>
               <strong>Almacenamiento esencial</strong>
-              <p>Necesario para recordar tu elección.</p>
+              <p>
+                Necesario para recordar tu elección.
+              </p>
             </div>
-            <span className="cookie-consent__always">
-              Siempre activo
-            </span>
           </div>
 
           <div className="cookie-consent__detail">
             <div>
-              <strong>Analítica de Microsoft Clarity</strong>
+              <strong>
+                Analítica de Microsoft Clarity
+              </strong>
               <p>
-                Nos ayuda a mejorar la experiencia de navegación.
+                Nos ayuda a comprender y mejorar la
+                experiencia de navegación.
               </p>
             </div>
-
-            {settingsOpen ? (
-              <label className="cookie-consent__switch">
-                <input
-                  type="checkbox"
-                  checked={analytics}
-                  onChange={(event) =>
-                    setAnalytics(event.target.checked)
-                  }
-                />
-                <span>Permitir</span>
-              </label>
-            ) : (
-              <span className="cookie-consent__optional">
-                Opcional
-              </span>
-            )}
           </div>
         </div>
+
         <div className="cookie-consent__actions">
-          {settingsOpen ? (
-            <>
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--secondary"
-                onClick={() => saveChoice(false)}
-              >
-                Rechazar todas
-              </button>
+          <button
+            type="button"
+            className="cookie-btn cookie-btn--secondary"
+            onClick={() => saveChoice(false)}
+          >
+            Rechazar
+          </button>
 
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--secondary"
-                onClick={() => saveChoice(analytics)}
-              >
-                Guardar selección
-              </button>
-
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--primary"
-                onClick={() => saveChoice(true)}
-              >
-                Aceptar todas
-              </button>
-            </>
-          ) : (
-            <>
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--secondary"
-                onClick={() => saveChoice(false)}
-              >
-                Rechazar
-              </button>
-
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--secondary"
-                onClick={() => {
-                  setAnalytics(false);
-                  setSettingsOpen(true);
-                }}
-              >
-                Configurar
-              </button>
-
-              <button
-                type="button"
-                className="cookie-btn cookie-btn--primary"
-                onClick={() => saveChoice(true)}
-              >
-                Aceptar todas
-              </button>
-            </>
-          )}
+          <button
+            type="button"
+            className="cookie-btn cookie-btn--primary"
+            onClick={() => saveChoice(true)}
+          >
+            Aceptar analítica
+          </button>
         </div>
       </section>
     </div>
